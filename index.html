@@ -7,8 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #1a1a1a;
-            color: white;
+            background-color: #0d0d0d; /* Deep black background */
+            color: #ffffff;
             text-align: center;
             margin: 0;
             padding: 0;
@@ -17,15 +17,27 @@
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            background: #222;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            background: linear-gradient(135deg, #1a1a2e, #2b2b4f); /* Dark violet gradient */
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(128, 0, 128, 0.7);
+            transition: 0.4s ease;
         }
-        h1 {
-            color: #ffcc00;
+        h1, h2 {
+            color: #ffcc00; /* Neon yellow for bold titles */
+            text-shadow: 0 0 10px #ffcc00;
         }
         p {
             font-size: 18px;
+            line-height: 1.6;
+        }
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        a:hover {
+            color: #ffd700;
+            text-shadow: 0 0 10px #ffd700;
         }
         .buy-button {
             display: inline-block;
@@ -36,26 +48,27 @@
             text-decoration: none;
             font-size: 20px;
             font-weight: bold;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.8);
-            transition: 0.3s;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.9);
+            transition: 0.4s;
         }
         .buy-button:hover {
-            background: #ffdd44;
+            background: #ffd700;
+            transform: scale(1.05);
         }
         .footer {
             margin-top: 30px;
             font-size: 14px;
-            color: gray;
+            color: #999;
         }
         .roadmap {
             margin-top: 40px;
-            padding: 20px;
-            background: #333;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
+            padding: 25px;
+            background: #1a1a2e; /* Deep violet */
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
         }
-        .roadmap h2 {
+        .roadmap h2, .roadmap h3 {
             color: #ffcc00;
         }
         .roadmap ul {
@@ -65,6 +78,11 @@
         .roadmap li {
             margin: 10px 0;
             font-size: 18px;
+            transition: transform 0.3s;
+        }
+        .roadmap li:hover {
+            transform: scale(1.05);
+            color: #ffd700;
         }
     </style>
 </head>
@@ -73,52 +91,52 @@
         <h1>🔥 Welcome to HighCake ($BAKED) 🚀</h1>
         <p>The sweetest meme coin on Binance Smart Chain! Join the community and get BAKED today!</p>
         <a href="https://pancakeswap.finance/?outputCurrency=0xCea53c31613c5AA344a3Af54D6C6850F1AF6763A" class="buy-button">Buy $BAKED on PancakeSwap</a>
-        <p>📊 <a href="https://dexscreener.com/bsc/0x95Bab9f95f2Df955fcD594AA30c2C0Ce6674470b" style="color:#ffcc00; text-decoration: none;">View Chart on DexScreener</a></p>
-        <p>📢 Join the conversation on  <a href="https://x.com/HighCakeBKD" style="color:#ffcc00; text-decoration: none;">X</a></p>
+        <p>📊 <a href="https://dexscreener.com/bsc/0x95Bab9f95f2Df955fcD594AA30c2C0Ce6674470b">View Chart on DexScreener</a></p>
+        <p>📢 Join the conversation on <a href="https://x.com/HighCakeBKD">X</a></p>
     </div>
 
-    <section id="roadmap" style="background-color: #1a1a1a; color: white; padding: 50px 20px; text-align: center;">
-    <h2 style="font-size: 36px; color: #ffcc00;">🚀 HighCake ($BAKED) Roadmap 🚀</h2>
+    <section id="roadmap" class="roadmap">
+        <h2>🚀 HighCake ($BAKED) Roadmap 🚀</h2>
+        <div style="max-width: 800px; margin: auto; text-align: left;">
+            <h3>🍰 Phase 1: The Preheat (Completed)</h3>
+            <ul>
+                <li>✅ Launch of $BAKED token</li>
+                <li>✅ Liquidity locked for ultimate trust 🔒</li>
+                <li>✅ Website & memes live to get the world BAKED</li>
+                <li>✅ First community giveaways 🎁</li>
+                <li>✅ Listed on DexScreener 📊</li>
+            </ul>
 
-    <div style="max-width: 800px; margin: auto; text-align: left; padding: 20px; background: #222; border-radius: 10px; box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);">
-        <h3 style="color: #ffcc00;">🍰 Phase 1: The Preheat (Completed)</h3>
-        <ul style="list-style: none; padding-left: 0;">
-            <li>✅ Launch of $BAKED token</li>
-            <li>✅ Liquidity locked for ultimate trust 🔒</li>
-            <li>✅ Website & memes live to get the world BAKED</li>
-            <li>✅ Listed on DexScreener 📊</li>
-        </ul>
+            <h3>🚀 Phase 2: The Rise (Current Phase)</h3>
+            <ul>
+                <li>🔥 Aggressive meme marketing campaigns</li>
+                <li>🤝 Partnerships with crypto influencers & meme lords</li>
+                <li>🎨 NFT Collection: “BAKED Degens Club” (exclusive for holders)</li>
+                <li>🌍 Expand to more DEXs (PancakeSwap + new liquidity pairs)</li>
+                <li>🎯 Community voting system for future features</li>
+            </ul>
 
-        <h3 style="color: #ffcc00;">🚀 Phase 2: The Rise (Current Phase)</h3>
-        <ul style="list-style: none; padding-left: 0;">
-            <li>🔥 Aggressive meme marketing campaigns</li>
-            <li>🤝 Partnerships with crypto influencers & meme lords</li>
-            <li>🎨 NFT Collection: “BAKED Degens Club” (exclusive for holders)</li>
-            <li>🌍 Expand to more DEXs (PancakeSwap + new liquidity pairs)</li>
-            <li>🎯 Community voting system for future features</li>
-        </ul>
+            <h3>🍰 Phase 3: Fully BAKED (Coming Soon)</h3>
+            <ul>
+                <li>💬 Launch of <strong>HighCake Forum</strong> with MetaMask login</li>
+                <li>🔐 Token-gated content: Exclusive access for $BAKED holders</li>
+                <li>🎮 <strong>BAKED Mini-Games</strong>: Play-to-Earn with leaderboard rewards</li>
+                <li>🔥 Token burns on milestones to reduce supply & pump the chart</li>
+                <li>📱 HighCake mobile app for memes, market data, and community hub</li>
+                <li>🛍️ <strong>BAKED Merch Store</strong> (pay with $BAKED for discounts!)</li>
+            </ul>
 
-        <h3 style="color: #ffcc00;">🍰 Phase 3: Fully BAKED (Coming Soon)</h3>
-        <ul style="list-style: none; padding-left: 0;">
-            <li>💬 Launch of <strong>HighCake Forum</strong> with MetaMask login</li>
-            <li>🔐 Token-gated content: Exclusive access for $BAKED holders</li>
-            <li>🎮 <strong>BAKED Mini-Games</strong>: Play-to-Earn with leaderboard rewards</li>
-            <li>🔥 Token burns on milestones to reduce supply & pump the chart</li>
-            <li>📱 HighCake mobile app for memes, market data, and community hub</li>
-            <li>🛍️ <strong>BAKED Merch Store</strong> (pay with $BAKED for discounts!)</li>
-        </ul>
+            <h3>🌕 Phase 4: The Moon & Beyond</h3>
+            <ul>
+                <li>🚀 CEX Listings (KuCoin, Gate.io, and more)</li>
+                <li>🏦 Launch of <strong>HighCake Degen DAO</strong> for community governance</li>
+                <li>🌐 Multi-chain expansion (ETH, Arbitrum, etc.)</li>
+                <li>🎉 HighCake IRL events (Crypto meetups, meme parties)</li>
+                <li>💎 $BAKED = THE MEME COIN EVERYONE TALKS ABOUT</li>
+            </ul>
+        </div>
+    </section>
 
-        <h3 style="color: #ffcc00;">🌕 Phase 4: The Moon & Beyond</h3>
-        <ul style="list-style: none; padding-left: 0;">
-            <li>🚀 CEX Listings (KuCoin, Gate.io, and more)</li>
-            <li>🏦 Launch of <strong>HighCake Degen DAO</strong> for community governance</li>
-            <li>🌐 Multi-chain expansion (ETH, Arbitrum, etc.)</li>
-            <li>🎉 HighCake IRL events (Crypto meetups, meme parties)</li>
-            <li>💎 $BAKED = THE MEME COIN EVERYONE TALKS ABOUT</li>
-        </ul>
-    </div>
-</section>
-<p>📄 <a href="whitepaper.html" style="color:#ffcc00; text-decoration: none;">Read Whitepaper</a></p>
     <div class="footer">
         <p>&copy; 2024 HighCake ($BAKED). All Rights Reserved.</p>
     </div>
